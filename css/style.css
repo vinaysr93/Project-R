@@ -1,0 +1,151 @@
+@import "bourbon";
+@import "neat";
+
+$base-duration: 500ms;
+
+// Colors
+$color-1: #002127;
+$color-2: #3498db;
+$color-3: #2ecc71;
+
+// Breakpoints
+$sm: new-breakpoint(min-width 320px);
+$med: new-breakpoint(min-width 768px);
+$lg: new-breakpoint(min-width 1024px);
+
+*, *:before, *:after {
+	box-sizing: border-box;
+	outline: none;
+}
+
+body {
+	
+}
+
+h1 {
+	color: white;
+	font-weight: 100;
+	
+	i {
+		margin: 0 5px;
+	}
+}
+
+
+
+.container-fluid{
+
+
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100vh;
+	background-image: url('https://images.pexels.com/photos/1367192/pexels-photo-1367192.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+	background-position: left center;
+	background-size: cover;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 16px;
+	font-smooth: auto;
+	font-weight: 300;
+	line-height: 1.5;
+	color: #444;
+	
+	&:before, &:after {
+		position: absolute;
+		content: '';
+		width: 100%;
+		height: 50%;
+		background-size: cover;
+	}
+	
+	&:before {
+		top: 0;
+		left: 0;
+		background-image: url('https://github.com/joshuaward/codepen-images/blob/master/clouds-left.png?raw=true');
+		animation: clouds1 110s linear infinite;
+	}
+	
+	&:after {
+		bottom: 0;
+		left: 0;
+		background-image: url('https://github.com/joshuaward/codepen-images/blob/master/clouds-right.png?raw=true');
+		animation: clouds2 100s linear infinite;
+	}
+	
+	@keyframes clouds1 {
+		to { background-position: 200%; }
+	}
+	
+	@keyframes clouds2 {
+		to { background-position: -200%; }
+	}
+
+	
+
+
+
+}
+
+.container-features{
+
+
+	margin-top:120%
+	padding-left: 100%;
+	padding-top: 15%;
+}
+
+.container{
+
+	background-image: url('./images/universe.jpeg');;
+	padding-top:3.5%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: right;
+	width: 100%;
+	height: 100vh;
+	padding-left:5%;
+
+}
+
+#a1 {
+
+	padding-left: 21%;
+	margin-left:25%;
+}
+
+#comment1{
+
+	
+	padding-top:17%;
+}
+
+
+#comment2{
+
+	
+	padding-top:12%;
+	padding-left:5%
+}
+
+#sittingonthefloorshrug{
+
+	padding-right:20%;
+}
+
+#butterfly_effect{
+
+	padding:auto;
+}
+
+#comment3{
+
+	width=35%;
+	padding-top:10%;
+	padding-bottom: 20%;
+	padding-right:10%;
+	text-align: justify;
+	text-justify: inter-word;
+}
